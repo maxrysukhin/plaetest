@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test task</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="chat-window">
+      <div class="chat-window__contents">
+        <div class="manager">
+          <div class="manager__right">
+            <div class="manager__name">Вероника Ростова</div>
+            <div class="manager__position">Менеджер по продажам</div>
+            <div class="manager__quote">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны</div>
+          </div>
+          <div class="services">
+            <div class="services__title">Услуг</div>
+            <ul class="services__list">
+              <li class="service-item">
+                <div class="service-item__progress service-item__first"></div>
+                <div class="service-item__name">Ручное бронирование</div>
+                <div class="service-item__quantity">11</div>
+              </li>
+              <li class="service-item">
+                <div class="service-item__progress service-item__second"></div>
+                <div class="service-item__name">Пакетные туры</div>
+                <div class="service-item__quantity">3</div>
+              </li>
+              <li class="service-item">
+                <div class="service-item__progress service-item__last"></div>
+                <div class="service-item__name">Отели</div>
+                <div class="service-item__quantity">1</div>
+              </li>
+            </ul>
+            <div class="services__total">
+              <div class="total__all">Всего</div>
+              <div class="total__num">15</div>
+            </div>
+          </div>
+          <div class="manager__left">
+            <div class="manager__photo"><img class="manager__img" src="./assets/img/avatar.png"></div>
+          </div>
+        </div>
+        <div class="discussion">
+          <div class="discussion__head">
+            <div class="discussion__head-left">
+              <div class="discussion__last">Последние отзывы</div><a class="discussion__all" href="#">Все отзывы</a>
+            </div>
+            <div class="discussion__head-right">
+              <div class="discussion__likes">
+                <div class="discussion__likes-icon fa fa-heart"></div>
+                <div class="discussion__likes-num">131</div>
+              </div>
+              <div class="discussion__total">
+                <div class="discussion__total-icon fa fa-comment"></div>
+                <div class="discussion__total-num">14</div>
+              </div>
+            </div>
+          </div>
+          <ul class="posts">
+            <li class="post">
+              <div class="post__author">Самуил</div>
+              <div class="post__date">13 октября 2011</div>
+              <div class="post__text">Привет, Верунь! ниче себе ты крутая. фотка класс!!!
+                <div class="post__triangle"></div>
+              </div>
+            </li>
+            <li class="post">
+              <div class="post__author">Лилия Семёновна</div>
+              <div class="post__date">14 октября 2011</div>
+              <div class="post__text">
+                Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
+                стабилизирует кинетический момент момент, это и есть всемирно
+                известный центр огранки алмазов и торгивли бриллиантами?
+                <div class="post__triangle"></div>
+              </div>
+            </li>
+            <li class="post">
+              <div class="post__author">Лилия Семёновна</div>
+              <div class="post__date">13 октября 2011</div>
+              <div class="post__text">
+                Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
+                стабилизирует кинетический момент?
+                <div class="post__triangle"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chat-window__contact">
+        <form id="form">
+          <textarea id="form__text" rows="4"></textarea>
+          <button id="form__button" type="submit">Написать консультанту</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
