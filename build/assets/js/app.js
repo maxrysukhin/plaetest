@@ -13,20 +13,21 @@
   }
 
   let addComment = function () {
-    let discussion = $('.posts').html(),
+    let discussion = document.getElementsByClassName("posts"),
+        posts = discussion[0].innerHTML,
         date = new Date(),
-        text = $('#form__text'),
+        text = document.getElementById('form__text'),
         textDate = date.getDate() + ' ' + getTextMonth(date) + ' ' + date.getYear();
 
     let comment = '<li class="post">' +
                 '<div class="post__author">Аноним</div>' +
                 '<div class="post__date">' + textDate + '</div>' +
-                '<div class="post__text">' + text.val() +
+                '<div class="post__text">' + text.value +
                 '<div class="post__triangle"></div></div>' +
               '</li>';
-    if (text.val() !== '') {
-      $('.posts').html(discussion + comment);
-      text.val('');
+    if (text.value !== '') {
+      discussion[0].innerHTML = posts + comment;
+      text.value = '';
     }
   };
 
