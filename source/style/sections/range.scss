@@ -1,0 +1,57 @@
+.range {
+    height: 800px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column 
+}
+
+.range__title {
+    font-family: 'nunitosemibold', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.range__text {
+    font-family: 'nunitoitalic', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.range__img-block {
+    height: 460px;
+    width: 860px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.arrow {
+    fill: black;
+    fill-opacity: .15;
+    height: 40px;
+    width: 40px;
+
+    &:hover {
+        fill-opacity: .30;
+    }
+}
+
+.arrow-right {
+    transform: rotate(180deg)
+}
+
+.range__img {
+    max-width: 460px
+}
+
+.range__type {
+    font-family: 'nunitobold', sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.range__num {
+    font-family: 'yantramanavlight', sans-serif;
+    font-size: 16px;
+}

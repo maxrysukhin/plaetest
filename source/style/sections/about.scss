@@ -1,0 +1,40 @@
+.about {
+    height: 800px;
+    display: flex
+}
+
+.about__right, .about__left {
+    width: 50%;
+    height: 100%;
+}
+
+.about__left {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.half-section__image {
+    height: 100%;
+}
+
+.about__block {
+    height: 580px;
+    width: 415px;
+
+    p {
+        padding-bottom: 30px
+    }
+}
+
+.about__title {
+    font-family: 'nunitoregular', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.about__text {
+    font-family: 'nunitoregular', sans-serif;
+    font-size: 16px
+}

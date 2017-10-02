@@ -15,9 +15,12 @@ body {
 }
 
 .wrapper {
+  margin: 0 auto;
   min-height: 100%;
   position: relative;
   overflow: hidden;
+  min-width: 1280px;
+  width: 1280px;
 }
 
 ul {

@@ -4,69 +4,12 @@ block variables
   - var title = 'Test task'
 
 block content
-  .chat-window
-    .chat-window__contents
-      .manager
-        .manager__right
-          .manager__name Вероника Ростова
-          .manager__position Менеджер по продажам
-          .manager__quote Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны
-        .services
-          .services__title Услуг
-          ul.services__list
-            li.service-item
-              .service-item__progress.service-item__first
-              .service-item__name Ручное бронирование
-              .service-item__quantity 11
-            li.service-item
-              .service-item__progress.service-item__second
-              .service-item__name Пакетные туры
-              .service-item__quantity 3
-            li.service-item
-              .service-item__progress.service-item__last
-              .service-item__name Отели
-              .service-item__quantity 1
-          .services__total
-            .total__all Всего
-            .total__num 15
-        .manager__left
-          .manager__photo
-            img.manager__img(src="./assets/img/avatar.png")
-      .discussion
-        .discussion__head
-          .discussion__head-left
-            .discussion__last Последние отзывы
-            a(href="#").discussion__all Все отзывы
-          .discussion__head-right
-            .discussion__likes
-              .discussion__likes-icon.fa.fa-heart
-              .discussion__likes-num 131
-            .discussion__total
-              .discussion__total-icon.fa.fa-comment
-              .discussion__total-num 14
-        ul.posts
-          li.post
-            .post__author Самуил
-            .post__date 13 октября 2011
-            .post__text
-              | Привет, Верунь! ниче себе ты крутая. фотка класс!!!
-              .post__triangle
-          li.post
-            .post__author Лилия Семёновна
-            .post__date 14 октября 2011
-            .post__text
-              | Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
-              | стабилизирует кинетический момент момент, это и есть всемирно
-              | известный центр огранки алмазов и торгивли бриллиантами?
-              .post__triangle
-          li.post
-            .post__author Лилия Семёновна
-            .post__date 13 октября 2011
-            .post__text
-              | Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
-              | стабилизирует кинетический момент?
-              .post__triangle
-    .chat-window__contact
-      form#form
-        textarea#form__text(rows="4")
-        button#form__button(type="submit") Написать консультанту
+  include ../sections/header
+  include ../sections/about
+  include ../sections/charlie
+  include ../sections/edie
+  include ../sections/range
+  include ../sections/why
+  include ../sections/stockist
+  include ../sections/soon
+  include ../parts/nav

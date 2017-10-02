@@ -1,0 +1,72 @@
+.review {
+    height: 800px;
+    display: flex;
+}
+
+.review__right, .review__left {
+    width: 50%;
+    height: 100%;
+    overflow: hidden
+}
+
+.review__left .half-section__image {
+    width: 670px;
+    height: 1010px;
+    margin-top: -80px;
+    margin-left: -15px
+}
+
+.review-block {
+    width: 380px;
+}
+
+.charlie__right, .edie__left {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.review__title {
+    font-family: 'nunitosemibold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.review__contents {
+    position: relative;
+    text-align: center
+}
+
+.review__open-quote {
+    top: -25px;
+    left: 0;
+    position: absolute;
+    font-size: 80px;
+    color: #dcdcdc;
+    font-family: 'nunitoextrabold', sans-serif
+}
+
+.review__close-quote {
+    bottom: 25px;
+    right: 0;
+    position: absolute;
+    font-size: 80px;
+    color: #dcdcdc;
+    font-family: 'nunitoextrabold', sans-serif
+}
+
+.review__text {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 50px 0;
+    text-align: center;
+    width: 330px;
+    font-family: 'yantramanavregular', sans-serif;
+    font-size: 20px;
+}
+
+.review__author {
+    font-family: 'yantramanavregular', sans-serif;
+    font-size: 18px;
+}

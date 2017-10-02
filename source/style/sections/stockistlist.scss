@@ -1,0 +1,75 @@
+.stockist {
+    padding: 85px 115px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column 
+}
+
+.stockist__title {
+    font-family: 'nunitosemibold', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.stockist__text {
+    font-family: 'nunitoitalic', sans-serif;
+    padding-bottom: 75px;
+}
+
+.stock-list {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px
+}
+
+.stock {
+    font-family: 'yantramanavlight', sans-serif;
+    font-size: 15px;
+    width: 200px;
+    padding-bottom: 55px;
+}
+
+.stock__title {
+    font-size: 16px;
+    font-family: 'yantramanavmedium', sans-serif;
+}
+
+.stock__phone {
+    padding-bottom: 10px;
+}
+
+.stock__site {
+    color: #1faa50;
+}
+
+.contacts__title {
+    font-family: 'nunitosemibold', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contacts__text {
+    font-family: 'nunitoitalic', sans-serif;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.contacts {
+    width: 360px;
+    display: flex;
+    justify-content: space-between
+}
+
+.contacts__email {
+    color: #20ab50;
+    font-size: 18px;
+    font-family: 'yantramanavregular', sans-serif;
+}
+
+.contacts__phone {
+    font-size: 18px;
+    font-family: 'yantramanavregular', sans-serif;    
+}

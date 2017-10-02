@@ -5,101 +5,342 @@
     <title>Test task</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/app.css">
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <script src="./assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="chat-window">
-      <div class="chat-window__contents">
-        <div class="manager">
-          <div class="manager__right">
-            <div class="manager__name">Вероника Ростова</div>
-            <div class="manager__position">Менеджер по продажам</div>
-            <div class="manager__quote">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны</div>
-          </div>
-          <div class="services">
-            <div class="services__title">Услуг</div>
-            <ul class="services__list">
-              <li class="service-item">
-                <div class="service-item__progress service-item__first"></div>
-                <div class="service-item__name">Ручное бронирование</div>
-                <div class="service-item__quantity">11</div>
-              </li>
-              <li class="service-item">
-                <div class="service-item__progress service-item__second"></div>
-                <div class="service-item__name">Пакетные туры</div>
-                <div class="service-item__quantity">3</div>
-              </li>
-              <li class="service-item">
-                <div class="service-item__progress service-item__last"></div>
-                <div class="service-item__name">Отели</div>
-                <div class="service-item__quantity">1</div>
-              </li>
-            </ul>
-            <div class="services__total">
-              <div class="total__all">Всего</div>
-              <div class="total__num">15</div>
+    <div class="wrapper">
+      <section class="header">
+        <div class="header__background"></div>
+        <div class="header__gradient"></div>
+        <div class="header__logo"><img class="header__logo-img" src="assets/img/logo.png"></div>
+        <div class="signup">
+          <div class="signup__title">Coming Soon</div>
+          <div class="signup__text">
+            goplae.co.uk is coming soon but in the meantime check out this page and sign up to our newsletter for more information</div>
+          <form class="form">
+            <input class="form__email" type="email" placeholder="Enter email address">
+            <button class="form__submit" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__left">
+          <div class="about__block">
+            <h1 class="about__title">About Plae</h1>
+            <div class="about__text"> 
+              <p>
+                Previously a Designer for Puma and Adidas, Head Designer Ryan Ringholz has started a new revolution in kids trainers. 
+                Using technology usually reserved for elite athletes, 
+                Plae creates shoes designed especially for a child’s foot.
+              </p>
+              <p>
+                Because kids feet are always growing, their shoes should accommodate leaving the cartilage and fledgling bone room to grow its own way. 
+                The interchangeable tabs adjust to accommodate thinner, wider or 
+                thicker feet and nearly all Plae shoes can fit an AFO orthotic brace.
+              </p>
+              <p>
+                With their dynamic traction, little feet can feel the ground beneath them and get a grip on it. The rest is designed to elite athlete standards: 
+                super shock absorption, durable toe guards, and wicking, washable anti-microbial inserts.
+              </p>
+              <p>
+                With every shoe, Plae sources responsible, recycled, and non-toxic materials, and makes sure manufacturing and labour is fair and child-free.</p>
             </div>
-          </div>
-          <div class="manager__left">
-            <div class="manager__photo"><img class="manager__img" src="./assets/img/avatar.png"></div>
           </div>
         </div>
-        <div class="discussion">
-          <div class="discussion__head">
-            <div class="discussion__head-left">
-              <div class="discussion__last">Последние отзывы</div><a class="discussion__all" href="#">Все отзывы</a>
+        <div class="about__right image__section"><img class="half-section__image" src="assets/img/aboutplae.png"></div>
+      </section>
+      <section class="review">
+        <div class="review__left image__section"><img class="half-section__image" src="assets/img/charlie.png"></div>
+        <div class="review__right charlie__right">
+          <article class="review-block">
+            <h2 class="review__title">What our customers say</h2>
+            <div class="review__contents">
+              <div class="review__open-quote">&lsquo;&lsquo;</div>
+              <div class="review__close-quote">&rsquo;&rsquo;</div>
+              <p class="review__text">
+                I like them because they are very comfy and soft inside. They are really light which means I run faster. I like the cool 
+                straps that I can change
+              </p><span class="review__author">Charlie (age 8)</span>
             </div>
-            <div class="discussion__head-right">
-              <div class="discussion__likes">
-                <div class="discussion__likes-icon fa fa-heart"></div>
-                <div class="discussion__likes-num">131</div>
-              </div>
-              <div class="discussion__total">
-                <div class="discussion__total-icon fa fa-comment"></div>
-                <div class="discussion__total-num">14</div>
-              </div>
+          </article>
+        </div>
+      </section>
+      <section class="review">
+        <div class="review__left edie__left">
+          <article class="review-block">
+            <div class="review__contents">
+              <div class="review__open-quote">&lsquo;&lsquo;</div>
+              <div class="review__close-quote">&rsquo;&rsquo;</div>
+              <p class="review__text">
+                I like that I can do PE in them because they're so comfy and then after school in the park, the bottoms 
+                are grippy so I can climb really well
+              </p><span class="review__author">Edie (age 6)</span>
             </div>
+          </article>
+        </div>
+        <div class="review__right image__section"><img class="half-section__image" src="assets/img/edie.png"></div>
+      </section>
+      <section class="range">
+        <h1 class="range__title">The Range</h1>
+        <p class="range__text">View the stiles available now from select stocklist</p>
+        <div class="range__img-block">
+          <div class="range__arrow">
+            <svg class="arrow arrow-left">
+              <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+            </svg>
+          </div><img class="range__img" src="assets/img/shoes/shoe.png">
+          <div class="range__arrow">
+            <svg class="arrow arrow-right">
+              <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+            </svg>
           </div>
-          <ul class="posts">
-            <li class="post">
-              <div class="post__author">Самуил</div>
-              <div class="post__date">13 октября 2011</div>
-              <div class="post__text">Привет, Верунь! ниче себе ты крутая. фотка класс!!!
-                <div class="post__triangle"></div>
-              </div>
+        </div><span class="range__type">TY</span><span class="range__num">1 / 7</span>
+      </section>
+      <section class="why">
+        <h2 class="why__title">Why Plae?</h2>
+        <p class="why__text">Some of the features that make Plae shoes so good for kids</p>
+        <div class="why__plae"><img class="why__shoes-img" src="assets/img/plaeshoe.png">
+          <ul class="features__list features__left-list">
+            <li class="feature">
+              <div id="f1"></div>
+              <div class="feature__title">Pull Tab</div>
+              <p class="feature__text">makes it easy for little hands and fingers to get their shoes on.</p>
             </li>
-            <li class="post">
-              <div class="post__author">Лилия Семёновна</div>
-              <div class="post__date">14 октября 2011</div>
-              <div class="post__text">
-                Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
-                стабилизирует кинетический момент момент, это и есть всемирно
-                известный центр огранки алмазов и торгивли бриллиантами?
-                <div class="post__triangle"></div>
-              </div>
+            <li class="feature">
+              <div id="f2"></div>
+              <div class="feature__title">Shock Absorption</div>
+              <p class="feature__text">
+                removable ECO-ORTHOLITE® anti-microbial, anti-bacterial insole, made from castor beans, provides superior protection with renewable resources.</p>
             </li>
-            <li class="post">
-              <div class="post__author">Лилия Семёновна</div>
-              <div class="post__date">13 октября 2011</div>
-              <div class="post__text">
-                Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
-                стабилизирует кинетический момент?
-                <div class="post__triangle"></div>
-              </div>
+            <li class="feature">
+              <div id="f3"></div>
+              <div class="feature__title">Custom Fit & Style</div>
+              <p class="feature__text">
+                interchangeable tabs come in S,M,L,XL sizes to accommodate instep widths and allows kids to make it their own with different color, material and print options. Plae 
+                shoes also have the ability to fit AFO orthotic braces.
+              </p>
+            </li>
+            <li class="feature">
+              <div id="f4"></div>
+              <div class="feature__title">Eco-Friendly</div>
+              <p class="feature__text">
+                made in a solar powered, fair labour factory using recycled milk jugs (PET), ISO certified leathers, and water-based glues. </p>
+            </li>
+          </ul>
+          <ul class="features__list features__right-list">
+            <li class="feature">
+              <div id="f5"></div>
+              <div class="feature__title">Machine Washable*</div>
+              <p class="feature__text">for when kids get dirty.</p>
+            </li>
+            <li class="feature">
+              <div id="f6"></div>
+              <div class="feature__title">Anatomical Form</div>
+              <p class="feature__text">
+                specially engineered sole follows the natural contour of a child’s foot - which is mostly cartilage.</p>
+            </li>
+            <li class="feature">
+              <div id="f7"></div>
+              <div class="feature__title">Flexible Sole</div>
+              <p class="feature__text">promotes natural movement by allowing for a free range of movement.</p>
+            </li>
+            <li class="feature">
+              <div id="f8"></div>
+              <div class="feature__title">Passive Traction</div>
+              <p class="feature__text">
+                promotes natural movement by providing grip on loose earth without compromising contact on hard surfaces.</p>
+            </li>
+            <li class="feature">
+              <div id="f9"></div>
+              <div class="feature__title">Toe Guard</div>
+              <p class="feature__text">protects both the foot and shoe from toe drag.</p>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="chat-window__contact">
-        <form id="form">
-          <textarea id="form__text" rows="4"></textarea>
-          <button id="form__button" type="submit">Написать консультанту</button>
-        </form>
-      </div>
+      </section>
+      <section class="stockist">
+        <h2 class="stockist__title">Where can you find us?</h2>
+        <p class="stockist__text">See below our UK stockist kist</p>
+        <ul class="stock-list">
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+          <li class="stock">
+            <address class="stock__address">
+              <div class="stock__title">Best Foot Forward</div>
+              <div class="stock__street">76 Liverpool Road</div>
+              <div class="stock__city">Preston</div>
+              <div class="stock__zip">PR1 0QD</div>
+              <div class="stock__phone">0208 969 7565</div>
+              <div class="stock__site">bestfootforward.co.uk </div>
+            </address>
+          </li>
+        </ul>
+        <h2 class="contacts__title">Like to stock Plae?</h2>
+        <p class="contacts__text">Call or email us to send an inquiry</p>
+        <div class="contacts"><a class="contacts__email" href="hello@goplae.co.uk">hello@goplae.co.uk</a><span class="contacts__phone">07947 301292</span></div>
+      </section>
+      <section class="soon">
+        <div class="soon__message">
+          <h2 class="soon__title">Be the first to see goplae.co.uk</h2>
+          <div class="soon__text">Sign Up for the latest news</div>
+          <form class="form">
+            <input class="form__email" type="email" placeholder="Enter email address">
+            <button class="form__submit" type="submit">Sign up</button>
+          </form>
+        </div>
+      </section>
+      <aside class="nav">
+        <ul class="dotlist">
+          <li class="dotlist__item item_active"></li>
+          <li class="dotlist__item"></li>
+          <li class="dotlist__item"></li>
+          <li class="dotlist__item"></li>
+          <li class="dotlist__item"></li>
+          <li class="dotlist__item"></li>
+        </ul>
+      </aside>
     </div>
+    <footer class="footer">Copyright © 2015 Craftymothers ltd. All Rights Reserved</footer>
   </body>
 </html>
