@@ -6,7 +6,7 @@
 #### Для начала работы
 
 1. ```clone this repo (git clone https://github.com/maxrysukhin/plaetest.git)``` 
-2. ```cd path/to/... (cd testask)``` 
+2. ```cd path/to/... (cd plaetest)``` 
 3. ```npm install gulpjs/gulp-cli -g```  
 > Установка последней версии Gulp CLI tools глобально (подробнее - [GitHub](https://github.com/gulpjs/gulp/blob/4.0/docs/getting-started.md) )
 
