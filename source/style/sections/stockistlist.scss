@@ -1,20 +1,43 @@
 .stockist {
+    min-height: 100vh;
     padding: 85px 115px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex-direction: column 
+    flex-direction: column;
+
+    @include tablet() {
+        padding: 35px 45px;
+    }
 }
 
 .stockist__title {
     font-family: 'nunitosemibold', sans-serif;
     font-size: 30px;
     margin-bottom: 10px;
+    text-align: center;
+
+    @include tablet() {
+        font-size: 25px;
+    }
+
+    @include phone() {
+        font-size: 20px;
+    }
 }
 
 .stockist__text {
     font-family: 'nunitoitalic', sans-serif;
     padding-bottom: 75px;
+    text-align: center;
+
+    @include tablet() {
+        font-size: 15px;
+    }
+
+    @include phone() {
+        font-size: 14px;
+    }
 }
 
 .stock-list {
@@ -22,7 +45,15 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 35px
+    padding-bottom: 35px;
+
+    @include tablet() {
+        justify-content: center;
+    }
+
+    @include phone() {
+        justify-content: center;
+    }
 }
 
 .stock {
@@ -49,24 +80,50 @@
     font-family: 'nunitosemibold', sans-serif;
     font-size: 25px;
     margin-bottom: 10px;
+
+    @include tablet() {
+        font-size: 20px;
+    }
+
+    @include phone() {
+        font-size: 18px;
+    }
 }
 
 .contacts__text {
     font-family: 'nunitoitalic', sans-serif;
     font-size: 17px;
     margin-bottom: 40px;
+
+    @include tablet() {
+        font-size: 16px;
+    }
+
+    @include phone() {
+        font-size: 14px;
+    }
 }
 
 .contacts {
     width: 360px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+
+    @include tablet() {
+        width: 90%;
+        flex-direction: column;
+        text-align: center
+    }
 }
 
 .contacts__email {
     color: #20ab50;
     font-size: 18px;
     font-family: 'yantramanavregular', sans-serif;
+    
+    @include phone() {
+        width: 100%;
+    }
 }
 
 .contacts__phone {

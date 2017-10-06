@@ -2,16 +2,40 @@
     text-align: center;
     padding: 115px;
     background: #f3f3f3;
+
+    @include tablet() {
+        padding: 65px;
+    }
+
+    @include phone() {
+        padding: 35px;
+    }
 }
 
 .soon__title {
     font-family: 'nunitosemibold', sans-serif;
     font-size: 30px;
     margin-bottom: 5px;
+
+    @include tablet() {
+        font-size: 25px;
+    }
+
+    @include phone() {
+        font-size: 20px;
+    }
 }
 
 .soon__text {
     font-family: 'nunitosemibold', sans-serif;
     font-size: 20px;
     margin-bottom: 45px;
+
+    @include tablet() {
+        font-size: 15px;
+    }
+
+    @include phone() {
+        font-size: 14px;
+    }
 }

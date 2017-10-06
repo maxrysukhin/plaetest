@@ -7,12 +7,14 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/css/foundation.css">
     <link rel="stylesheet" href="./assets/css/app.css">
-    <script src="./assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
     <div class="wrapper">
-      <section class="header">
+      <section class="header" id="section-1">
         <div class="header__background"></div>
         <div class="header__gradient"></div>
         <div class="header__logo"><img class="header__logo-img" src="assets/img/logo.png"></div>
@@ -26,7 +28,7 @@
           </form>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="section-2">
         <div class="about__left">
           <div class="about__block">
             <h1 class="about__title">About Plae</h1>
@@ -50,10 +52,10 @@
             </div>
           </div>
         </div>
-        <div class="about__right image__section"><img class="half-section__image" src="assets/img/aboutplae.png"></div>
+        <div class="about__right image__section"></div>
       </section>
-      <section class="review">
-        <div class="review__left image__section"><img class="half-section__image" src="assets/img/charlie.png"></div>
+      <section class="review" id="section-3">
+        <div class="review__left image__section">     </div>
         <div class="review__right charlie__right">
           <article class="review-block">
             <h2 class="review__title">What our customers say</h2>
@@ -68,7 +70,7 @@
           </article>
         </div>
       </section>
-      <section class="review">
+      <section class="review" id="section-4">
         <div class="review__left edie__left">
           <article class="review-block">
             <div class="review__contents">
@@ -81,25 +83,46 @@
             </div>
           </article>
         </div>
-        <div class="review__right image__section"><img class="half-section__image" src="assets/img/edie.png"></div>
+        <div class="review__right image__section"></div>
       </section>
-      <section class="range">
+      <section class="range" id="section-5">
         <h1 class="range__title">The Range</h1>
         <p class="range__text">View the stiles available now from select stocklist</p>
-        <div class="range__img-block">
+        <div class="range__block">
           <div class="range__arrow">
             <svg class="arrow arrow-left">
               <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
             </svg>
-          </div><img class="range__img" src="assets/img/shoes/shoe.png">
+          </div>
+          <div class="range__img-block">
+            <ul class="shoeslist">
+              <li class="shoeslist__image shoeslist_active-img"><img class="shoeslist__img" src="assets/img/range/ty.jpg"></li>
+              <li class="shoeslist__image"><img class="shoeslist__img" src="assets/img/range/max.jpg"></li>
+              <li class="shoeslist__image"><img class="shoeslist__img" src="assets/img/range/emme.jpg"></li>
+              <li class="shoeslist__image"><img class="shoeslist__img" src="assets/img/range/camille.jpg"></li>
+              <li class="shoeslist__image"><img class="shoeslist__img" src="assets/img/range/noel.jpg"></li>
+              <li class="shoeslist__image"><img class="shoeslist__img" src="assets/img/range/roan.jpg"></li>
+              <li class="shoeslist__image"><img class="shoeslist__img" src="assets/img/range/navy.jpg"></li>
+            </ul>
+          </div>
           <div class="range__arrow">
             <svg class="arrow arrow-right">
               <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
             </svg>
           </div>
-        </div><span class="range__type">TY</span><span class="range__num">1 / 7</span>
+        </div>
+        <ul class="rangelist">
+          <li class="range__type range_active">TY</li>
+          <li class="range__type">MAX</li>
+          <li class="range__type">EMME</li>
+          <li class="range__type">CAMILLE</li>
+          <li class="range__type">NOEL</li>
+          <li class="range__type">ROAN</li>
+          <li class="range__type">NAVY</li>
+        </ul>
+        <div class="range__amount"><span class="range__num">1 </span>&nbsp;/ 7</div>
       </section>
-      <section class="why">
+      <section class="why" id="section-6">
         <h2 class="why__title">Why Plae?</h2>
         <p class="why__text">Some of the features that make Plae shoes so good for kids</p>
         <div class="why__plae"><img class="why__shoes-img" src="assets/img/plaeshoe.png">
@@ -161,7 +184,7 @@
           </ul>
         </div>
       </section>
-      <section class="stockist">
+      <section class="stockist" id="section-7">
         <h2 class="stockist__title">Where can you find us?</h2>
         <p class="stockist__text">See below our UK stockist kist</p>
         <ul class="stock-list">
@@ -320,7 +343,7 @@
         <p class="contacts__text">Call or email us to send an inquiry</p>
         <div class="contacts"><a class="contacts__email" href="hello@goplae.co.uk">hello@goplae.co.uk</a><span class="contacts__phone">07947 301292</span></div>
       </section>
-      <section class="soon">
+      <section class="soon" id="section-8">
         <div class="soon__message">
           <h2 class="soon__title">Be the first to see goplae.co.uk</h2>
           <div class="soon__text">Sign Up for the latest news</div>
@@ -330,16 +353,7 @@
           </form>
         </div>
       </section>
-      <aside class="nav">
-        <ul class="dotlist">
-          <li class="dotlist__item item_active"></li>
-          <li class="dotlist__item"></li>
-          <li class="dotlist__item"></li>
-          <li class="dotlist__item"></li>
-          <li class="dotlist__item"></li>
-          <li class="dotlist__item"></li>
-        </ul>
-      </aside>
+      <div class="nav"></div>
     </div>
     <footer class="footer">Copyright © 2015 Craftymothers ltd. All Rights Reserved</footer>
   </body>

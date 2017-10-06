@@ -1,11 +1,24 @@
 .about {
-    height: 800px;
-    display: flex
+    height: 100vh;
+    display: flex;
+
+    @include tablet {
+        height: auto;
+    }
+
+    @include phone() {
+        flex-flow: column;
+    }
 }
 
 .about__right, .about__left {
     width: 50%;
     height: 100%;
+
+    @include phone() {
+        height: 100vh;
+        width: 100%;
+    }
 }
 
 .about__left {
@@ -14,13 +27,18 @@
     align-items: center
 }
 
-.half-section__image {
-    height: 100%;
+.about__right {
+    height: 100vh;
+}
+
+.about .image__section {
+    background-image: url('../img/aboutplae.jpg');
+    background-size: cover
 }
 
 .about__block {
-    height: 580px;
-    width: 415px;
+    width: 455px;
+    padding: 20px;
 
     p {
         padding-bottom: 30px
@@ -31,10 +49,26 @@
     font-family: 'nunitoregular', sans-serif;
     font-size: 30px;
     text-align: center;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+
+    @include tablet() {
+        font-size: 25px;
+    }
+
+    @include phone() {
+        font-size: 20px;
+    }
 }
 
 .about__text {
     font-family: 'nunitoregular', sans-serif;
-    font-size: 16px
+    font-size: 16px;
+
+    @include tablet() {
+        font-size: 15px;
+    }
+
+    @include phone() {
+        font-size: 14px;
+    }
 }

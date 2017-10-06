@@ -1,5 +1,5 @@
 .why {
-    height: 800px;
+    min-height: 100vh;
     background: #e1e0e1;
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@
 }
 
 .why__plae {
-    width: 100%;
+    width: 1290px;
     position: relative;
     padding-left:60px;
     padding-right: 60px;

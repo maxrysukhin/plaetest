@@ -1,13 +1,37 @@
-section.range
+section.range#section-5
     h1.range__title The Range
     p.range__text View the stiles available now from select stocklist
-    .range__img-block
+    .range__block
         .range__arrow
             svg.arrow.arrow-left
                 use(xlink:href="assets/img/sprite.svg#arrow-left")
-        img.range__img(src="assets/img/shoes/shoe.png")
+        .range__img-block
+            ul.shoeslist
+                li.shoeslist__image.shoeslist_active-img
+                    img.shoeslist__img(src="assets/img/range/ty.jpg")
+                li.shoeslist__image
+                    img.shoeslist__img(src="assets/img/range/max.jpg")
+                li.shoeslist__image
+                    img.shoeslist__img(src="assets/img/range/emme.jpg")
+                li.shoeslist__image
+                    img.shoeslist__img(src="assets/img/range/camille.jpg")
+                li.shoeslist__image
+                    img.shoeslist__img(src="assets/img/range/noel.jpg")
+                li.shoeslist__image
+                    img.shoeslist__img(src="assets/img/range/roan.jpg")
+                li.shoeslist__image
+                    img.shoeslist__img(src="assets/img/range/navy.jpg")
         .range__arrow
             svg.arrow.arrow-right
                 use(xlink:href="assets/img/sprite.svg#arrow-left")
-    span.range__type TY
-    span.range__num 1 / 7
+    ul.rangelist
+        li.range__type.range_active TY
+        li.range__type MAX
+        li.range__type EMME
+        li.range__type CAMILLE
+        li.range__type NOEL
+        li.range__type ROAN
+        li.range__type NAVY
+    .range__amount
+        span.range__num 1 
+        | &nbsp;/ 7

@@ -9,20 +9,17 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-}
 
-.dotlist__item {
-    margin: 0 auto;
-    display: block;
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
-    margin-bottom: 21px;
-}
+    @include laptop() {
+        width: 100px;
+    }
 
-.item_active {
-    height: 12px;
-    width: 12px;
+    @include tablet() {
+        width: 80px;
+    }
+
+    @include phone() {
+        width: 30px;
+        background: transparent
+    }
 }

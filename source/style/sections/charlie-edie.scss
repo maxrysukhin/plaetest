@@ -1,23 +1,43 @@
 .review {
-    height: 800px;
+    height: 100vh;
     display: flex;
+    
+    @include phone() {
+        height: auto;
+    }
+
+    @include phone() {
+        flex-flow: column;
+    }
+}
+
+.review#section-4 {
+    @include phone() {
+        flex-direction: column-reverse
+    }
 }
 
 .review__right, .review__left {
     width: 50%;
     height: 100%;
-    overflow: hidden
+    overflow: hidden;
+    
+    @include phone() {
+        height: 100vh;
+        width: 100%;
+    }
 }
 
-.review__left .half-section__image {
-    width: 670px;
-    height: 1010px;
-    margin-top: -80px;
-    margin-left: -15px
+.review#section-3 .image__section {
+    background-image: url('../img/charlie.jpg');
+    background-size: cover;
+    background-position: right
 }
 
-.review-block {
-    width: 380px;
+.review#section-4 .image__section {
+    background-image: url('../img/edie.jpg');
+    background-size: cover;
+    background-position: center
 }
 
 .charlie__right, .edie__left {
@@ -26,11 +46,25 @@
     align-items: center
 }
 
+.review-block {
+    width: 420px;
+    padding: 0 20px;
+}
+
 .review__title {
     font-family: 'nunitosemibold', sans-serif;
     font-size: 30px;
     text-align: center;
     margin-bottom: 80px;
+
+    @include tablet() {
+        font-size: 25px;
+    }
+
+    @include phone() {
+        font-size: 20px;
+        margin-bottom: 40px
+    }
 }
 
 .review__contents {
@@ -44,7 +78,12 @@
     position: absolute;
     font-size: 80px;
     color: #dcdcdc;
-    font-family: 'nunitoextrabold', sans-serif
+    font-family: 'nunitoextrabold', sans-serif;
+
+    @include tablet() {
+        font-size: 60px;
+        top: -15px;    
+    }
 }
 
 .review__close-quote {
@@ -53,7 +92,12 @@
     position: absolute;
     font-size: 80px;
     color: #dcdcdc;
-    font-family: 'nunitoextrabold', sans-serif
+    font-family: 'nunitoextrabold', sans-serif;
+
+    @include tablet() {
+        font-size: 60px;
+        bottom: 15px;    
+    }
 }
 
 .review__text {
@@ -64,9 +108,27 @@
     width: 330px;
     font-family: 'yantramanavregular', sans-serif;
     font-size: 20px;
+
+    @include tablet() {
+        font-size: 15px;
+        width: 85%;
+        margin-bottom: 40px;
+    }
+
+    @include phone() {
+        font-size: 14px;
+    }
 }
 
 .review__author {
     font-family: 'yantramanavregular', sans-serif;
     font-size: 18px;
+
+    @include tablet() {
+        font-size: 14px;
+    }
+
+    @include phone() {
+        font-size: 13px;
+    }
 }

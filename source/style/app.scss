@@ -2,6 +2,9 @@
 @import 'common/font-awesome';
 @import 'common/nunito';
 @import 'common/yantramanav';
+@import 'helpers/mixins';
+@import 'helpers/jq-vertical-dot-navigation';
+
 
 @import 'sections/header';
 @import 'sections/about';
